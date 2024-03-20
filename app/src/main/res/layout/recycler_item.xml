@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginLeft="5dp"
+    android:layout_marginTop="5dp"
+    android:layout_marginRight="5dp"
+    android:background="#00EFEFEF"
+    android:paddingTop="10dp"
+    android:paddingBottom="10dp">
+
+
+    <TextView
+        android:id="@+id/duration_item"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_marginStart="10dp"
+        android:layout_toEndOf="@id/music_title_text"
+        android:text="00:00"
+        android:textColor="#EEEEEE" />
+
+    <ImageView
+        android:id="@+id/icon_view"
+        android:layout_width="36dp"
+        android:layout_height="36dp"
+        android:src="@drawable/music_icon" />
+
+    <TextView
+        android:id="@+id/music_title_text"
+        android:layout_width="260dp"
+        android:layout_height="35dp"
+        android:layout_centerVertical="false"
+        android:layout_marginStart="10dp"
+        android:layout_toEndOf="@id/icon_view"
+        android:ellipsize="end"
+        android:maxLines="1"
+        android:padding="10dp"
+        android:textColor="#EEEEEE"
+        tools:layout_centerVertical="true"
+        tools:text="Music" />
+
+    <TextView
+        android:id="@+id/music_size"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/music_title_text"
+        android:layout_alignBottom="@+id/music_title_text"
+        android:layout_marginStart="14dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginBottom="8dp"
+        android:layout_toEndOf="@id/duration_item"
+        android:text="0mb"
+        tools:layout_centerVertical="true"
+        tools:textColor="#EEEEEE" />
+
+</RelativeLayout>
